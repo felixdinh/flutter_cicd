@@ -20,4 +20,21 @@ jobs:
         run: flutter pub get
       - name: Run tests
         run: flutter test
-
+      - name: Build appbundle
+        run: flutter build appbundle
+  build_ios:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.27.3
+      - name: Get dependencies
+        run: flutter pub get
+      - name: Run tests
+        run: flutter test
+      - name: Build ipa
+        run: flutter build ipa
