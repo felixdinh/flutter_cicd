@@ -1,9 +1,1 @@
-//
-//  prod.xcconfig
-//  Runner
-//
-//  Created by Felix Dinh on 5/5/25.
-//
-
-// Configuration settings file format documentation can be found at:
-// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+#include *Generated.xcconfig*
