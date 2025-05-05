@@ -32,6 +32,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+**/pubspec.lock
 
 # Symbolication related
 app.*.symbols
@@ -44,5 +45,21 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+
 # Play Store credentials
 **/play-store-credentials.json
+
+# fastlane specific
+**/fastlane/report.xml
+**/fastlane/metadata
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporary files
+**/fastlane/test_output
+
+**/.cxx
